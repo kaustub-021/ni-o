@@ -1,0 +1,23 @@
+<script>
+    function enter()
+    {
+        document.getElementById('name').innerHTML=document.details.name.value;
+        document.getElementById('id').innerHTML=document.details.id.value;
+    }
+
+    </script>
+
+    <form name="details">
+        <p>Enter your name</p>
+
+        <input type= 'text' name='name'>
+
+        <p>Enter your id</p>
+    
+        <input type= 'text' name='id'>
+
+        <p> <input type = 'submit' onclick='enter();return false'></p>
+</form>
+
+<p id='name'></p>
+<p id='id'></p>
